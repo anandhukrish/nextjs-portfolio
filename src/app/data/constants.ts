@@ -154,3 +154,14 @@ export const skills = [
   { name: "REST APIs" },
   { name: "Testing" },
 ];
+
+export const projects = [
+  {
+    title: "Lorem",
+    image: "/next.svg",
+    description:
+      "ASP.NET, C# (.NET Framework), Database, HTML/CSS, JavaScript, MVC, AJAX, Bootstrap, jQuery, Knockout.js, Metro UI, Web Apps",
+    technologies: ["ASP.NET", "C#", "JavaScript"],
+    link: "lorem",
+  },
+];
