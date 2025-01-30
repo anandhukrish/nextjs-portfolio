@@ -44,7 +44,7 @@ const Title = ({
           },
         }}
         className={cn(
-          "text-6xl font-bold mb-6 text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-purple-400 to-emerald-400",
+          "text-6xl font-bold mb-6 text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-purple-400 to-emerald-400 [-webkit-background-clip:text] [-webkit-text-fill-color:transparent] text-gray-900",
           mainClass
         )}
       >

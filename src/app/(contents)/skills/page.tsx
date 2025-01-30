@@ -13,30 +13,37 @@ const Skills = () => {
       [SKILLS_COLORS.BLUE]: {
         border: "border-blue-500/20",
         text: "text-blue-400",
+        bg: "from-blue-500/10 to-blue-600/10",
       },
       [SKILLS_COLORS.GREEN]: {
         border: "border-green-500/20",
         text: "text-green-400",
+        bg: "from-green-500/10 to-green-600/10",
       },
       [SKILLS_COLORS.PURPLE]: {
         border: "border-purple-500/20",
         text: "text-purple-400",
+        bg: "from-purple-500/10 to-purple-600/10",
       },
       [SKILLS_COLORS.ORANGE]: {
         border: "border-orange-500/20",
         text: "text-orange-400",
+        bg: "from-orange-500/10 to-orange-600/10",
       },
       [SKILLS_COLORS.GRAY]: {
         border: "border-gray-500/20",
         text: "text-gray-400",
+        bg: "from-gray-500/10 to-gray-600/10",
       },
       [SKILLS_COLORS.RED]: {
         border: "border-red-500/20",
         text: "text-red-400",
+        bg: "from-red-500/10 to-red-600/10",
       },
       [SKILLS_COLORS.INDIGO]: {
         border: "border-indigo-500/20",
         text: "text-indigo-400",
+        bg: "from-indigo-500/10 to-indigo-600/10",
       },
     };
     return colorClasses[color] || colorClasses[SKILLS_COLORS.BLUE];
@@ -46,12 +53,15 @@ const Skills = () => {
       <Title
         mainHeading="Technical Skills"
         subHeading="What I Know"
-        containerClass="text-center mb-16"
+        containerClass="text-5xl text-center mb-14"
       />
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-7xl mx-auto">
         {skillsData.map((skill, i) => (
           <motion.div
-            className="bg-gradient-to-br from-blue-500/10 to-blue-600/10 rounded-2xl p-[1px]"
+            className={cn(
+              "bg-gradient-to-br  rounded-2xl p-[1px]",
+              getColorClasses(skill.color).bg
+            )}
             key={`${skill.title}-${i}`}
             initial="hidden"
             animate="show"

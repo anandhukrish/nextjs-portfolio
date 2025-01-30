@@ -11,7 +11,7 @@ const Experiences = () => {
       <Title
         mainHeading="Experience"
         subHeading="Career Journey"
-        containerClass="text-center mb-16"
+        containerClass="text-5xl text-center mb-14"
       />
       <div className="max-w-5xl mx-auto space-y-8">
         {experiences.map((exp, i) => (

@@ -10,7 +10,7 @@ const Resume = () => {
       <Title
         mainHeading=" My Professional Journey"
         subHeading="Resume"
-        containerClass="text-center mb-16"
+        containerClass="text-5xl text-center mb-14"
       />
       <div>
         <motion.div

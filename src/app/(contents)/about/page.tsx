@@ -10,7 +10,7 @@ const About = () => {
       <Title
         mainHeading="About Me"
         subHeading="Get to know me"
-        containerClass="text-center mb-16"
+        containerClass="text-5xl text-center mb-14"
       />
       <motion.div
         initial={{ y: "100px", opacity: 0 }}

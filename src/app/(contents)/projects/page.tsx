@@ -21,7 +21,7 @@ const Page = () => {
       <Title
         mainHeading="Featured Projects"
         subHeading="My Work"
-        containerClass="text-center mb-16"
+        containerClass="text-5xl text-center mb-14"
       />
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto">
         {projects.map((project, i) => (

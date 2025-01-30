@@ -1,8 +1,8 @@
 "use client";
 import Title from "@/components/title.component";
-import CopyIcon from "@/components/icons/copy.icon";
 import Image from "next/image";
 import { motion } from "framer-motion";
+import CopyInfo from "@/components/copy.info.component";
 
 export default function Home() {
   return (
@@ -42,34 +42,9 @@ export default function Home() {
           }}
           className="flex flex-col items-start md:items-start gap-4 bg-gray-800/50 p-6 rounded-xl backdrop-blur-sm border border-gray-700/50"
         >
-          <div className="flex items-center justify-between w-full group cursor-pointer relative bg-gray-700/30 px-4 py-2 rounded-lg hover:bg-gray-700/50 transition-all duration-300">
-            <div className="flex flex-col">
-              <span className="text-sm text-gray-400">Phone number</span>
-              <span className="text-gray-200">+91 9744938806</span>
-            </div>
-            <CopyIcon />
-          </div>
-          <div className="flex items-center justify-between w-full group cursor-pointer relative bg-gray-700/30 px-4 py-2 rounded-lg hover:bg-gray-700/50 transition-all duration-300">
-            <div className="flex flex-col">
-              <span className="text-sm text-gray-400">Github ID</span>
-              <span className="text-gray-200">anandhukrish</span>
-            </div>
-            <CopyIcon />
-          </div>
-          {/* <div className="flex items-center justify-between w-full group cursor-pointer relative bg-gray-700/30 px-4 py-2 rounded-lg hover:bg-gray-700/50 transition-all duration-300">
-            <div className="flex flex-col">
-              <span className="text-sm text-gray-400">Discord ID</span>
-              <span className="text-gray-200">soundsilo</span>
-            </div>
-            <CopyIcon />
-          </div> */}
-          <div className="flex items-center justify-between w-full group cursor-pointer relative bg-gray-700/30 px-4 py-2 rounded-lg hover:bg-gray-700/50 transition-all duration-300">
-            <div className="flex flex-col">
-              <span className="text-sm text-gray-400">Email</span>
-              <span className="text-gray-200">ananthukrish.k@gmail.com</span>
-            </div>
-            <CopyIcon />
-          </div>
+          <CopyInfo label="Phone number" displayText="+91 9744938806" />
+          <CopyInfo displayText="anandhukrish" label="Github ID" />
+          <CopyInfo displayText="ananthukrish.k@gmail.com" label="Email" />
         </motion.div>
       </div>
       <div className="md:w-1/2  flex justify-center mt-12 md:mt-0">

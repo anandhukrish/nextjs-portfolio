@@ -1,15 +1,29 @@
 "use client";
 import Title from "@/components/title.component";
-import React from "react";
+import React, { FormEvent, useState } from "react";
 import { motion } from "framer-motion";
 
 const Contact = () => {
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
+
+  function handleSubmit(e: FormEvent<HTMLFormElement>) {
+    e.preventDefault();
+
+    if (!email || !message) {
+      return;
+    }
+
+    setEmail("");
+    setMessage("");
+  }
+
   return (
     <>
       <Title
         mainHeading="Get in Touch"
         subHeading="Contact"
-        containerClass="text-center mb-16"
+        containerClass="text-5xl text-center mb-14"
       />
       <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12">
         <motion.div
@@ -138,7 +152,7 @@ const Contact = () => {
               </svg>
               Send a Message
             </h3>
-            <form className="space-y-6">
+            <form className="space-y-6" onSubmit={handleSubmit}>
               <div>
                 <label
                   htmlFor="email"
