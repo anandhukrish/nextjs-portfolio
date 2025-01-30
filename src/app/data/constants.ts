@@ -1,13 +1,13 @@
 import {
-  FrontendIcon,
-  BackendIcon,
-  DatabaseIcon,
-  DocumentIcon,
-  SecurityIcon,
-  TestingIcon,
-  VersionIcon,
-  PerformanceIcon,
-} from "@/components/icons";
+  Code,
+  Database,
+  FileText,
+  GitBranch,
+  Monitor,
+  Rocket,
+  Server,
+  Shield,
+} from "lucide-react";
 
 export enum SKILLS_COLORS {
   GREEN = "green",
@@ -22,25 +22,28 @@ export enum SKILLS_COLORS {
 export const aboutData = [
   {
     name: "Frontend",
-    icon: FrontendIcon,
+    icon: Code,
     description: "Expert in modern frontend frameworks and responsive design",
+    classes: "text-blue-500",
   },
   {
     name: "Backend",
-    icon: BackendIcon,
+    icon: Server,
     description: "Building robust and scalable server-side applications",
+    classes: "text-emerald-500",
   },
   {
     name: "Performance",
-    icon: PerformanceIcon,
+    icon: Rocket,
     description: "Optimizing applications for maximum speed and efficiency",
+    classes: "text-red-500",
   },
 ] as const;
 
 export const skillsData = [
   {
     title: "Frontend",
-    icon: FrontendIcon,
+    icon: Code,
     skills: [
       "React & Next.js",
       "Vue",
@@ -55,19 +58,19 @@ export const skillsData = [
   },
   {
     title: "Backend",
-    icon: BackendIcon,
+    icon: Server,
     skills: ["Node.js & Express", "Python"],
     color: SKILLS_COLORS.GREEN,
   },
   {
     title: "Database & DevOps",
-    icon: DatabaseIcon,
+    icon: Database,
     skills: ["PostgreSQL & MongoDB", "MySQL"],
     color: SKILLS_COLORS.PURPLE,
   },
   {
     title: "Version Control",
-    icon: VersionIcon,
+    icon: GitBranch,
     skills: [
       "Git & GitHub",
       "GitLab & Bitbucket",
@@ -77,7 +80,7 @@ export const skillsData = [
   },
   {
     title: "Security",
-    icon: SecurityIcon,
+    icon: Shield,
     skills: [
       "OWASP Security Standards",
       "OAuth 2.0 & OpenID Connect",
@@ -90,7 +93,7 @@ export const skillsData = [
   },
   {
     title: "Testing & QA",
-    icon: TestingIcon,
+    icon: Monitor,
     skills: [
       "Jest & React Testing Library",
       "Cypress E2E Testing",
@@ -101,7 +104,7 @@ export const skillsData = [
   },
   {
     title: "Documentation",
-    icon: DocumentIcon,
+    icon: FileText,
     skills: [
       "API Documentation (OpenAPI)",
       "Technical Documentation",

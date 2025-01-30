@@ -3,6 +3,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import { experiences, skills } from "@/app/data/constants";
 import Title from "@/components/title.component";
+import { Award, Briefcase, Code, GraduationCap } from "lucide-react";
 
 const ResumePage = () => {
   return (
@@ -28,21 +29,8 @@ const ResumePage = () => {
         >
           <section className="mb-12">
             <div className="flex items-center mb-6">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="2"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                className="lucide lucide-award w-6 h-6 text-blue-400 mr-2"
-              >
-                <circle cx="12" cy="8" r="6"></circle>
-                <path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11"></path>
-              </svg>
+              <Award className="w-6 h-6 text-blue-400 mr-2" />
+
               <h2 className="text-2xl font-semibold text-white">Overview</h2>
             </div>
             <div className="bg-gray-800/50 p-6 rounded-lg border border-gray-700">
@@ -89,21 +77,7 @@ const ResumePage = () => {
         >
           <section className="mb-12">
             <div className="flex items-center mb-6">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="2"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                className="lucide lucide-briefcase w-6 h-6 text-blue-400 mr-2"
-              >
-                <rect width="20" height="14" x="2" y="7" rx="2" ry="2"></rect>
-                <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
-              </svg>
+              <Briefcase className=" w-6 h-6 text-blue-400 mr-2" />
               <h2 className="text-2xl font-semibold text-white">
                 Professional Experience
               </h2>
@@ -144,21 +118,8 @@ const ResumePage = () => {
         >
           <section className="mb-12">
             <div className="flex items-center mb-6">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="2"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                className="lucide lucide-code w-6 h-6 text-blue-400 mr-2"
-              >
-                <polyline points="16 18 22 12 16 6"></polyline>
-                <polyline points="8 6 2 12 8 18"></polyline>
-              </svg>
+              <Code className="w-6 h-6 text-blue-400 mr-2" />
+
               <h2 className="text-2xl font-semibold text-white">
                 Technical Skills
               </h2>
@@ -190,22 +151,8 @@ const ResumePage = () => {
         >
           <section>
             <div className="flex items-center mb-6">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="2"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                className="lucide lucide-graduation-cap w-6 h-6 text-blue-400 mr-2"
-              >
-                <path d="M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.832l8.57 3.908a2 2 0 0 0 1.66 0z"></path>
-                <path d="M22 10v6"></path>
-                <path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5"></path>
-              </svg>
+              <GraduationCap className="w-6 h-6 text-blue-400 mr-2" />
+
               <h2 className="text-2xl font-semibold text-white">Education</h2>
             </div>
             <div className="bg-gray-800/50 p-6 rounded-lg border border-gray-700">

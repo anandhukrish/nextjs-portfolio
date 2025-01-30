@@ -22,14 +22,14 @@ const Title = ({
   const Comp = animateTitle ? motion.h1 : "h1";
   return (
     <div className={cn("text-left", containerClass)}>
-      <h3
+      <div
         className={cn(
           "text-blue-400 text-sm font-medium uppercase  tracking-wider mb-3",
           subClass
         )}
       >
         {subHeading}
-      </h3>
+      </div>
       <Comp
         initial={{
           scale: 0,

@@ -5,7 +5,7 @@ import { cn } from "@/lib/utils";
 import React from "react";
 import { motion } from "framer-motion";
 import { SKILLS_COLORS, skillsData } from "@/app/data/constants";
-import { LightingIcon } from "@/components/icons";
+import { Zap } from "lucide-react";
 
 const SkillsPage = () => {
   function getColorClasses(color: SKILLS_COLORS) {
@@ -86,7 +86,9 @@ const SkillsPage = () => {
             >
               <div className="flex items-center gap-3 mb-4">
                 <div className="w-12 h-12 rounded-xl bg-gray-700/50 flex items-center justify-center text-blue-400">
-                  <skill.icon />
+                  <skill.icon
+                    className={cn("size-6", getColorClasses(skill.color).text)}
+                  />
                 </div>
                 <h3 className="text-xl font-semibold text-white">
                   {skill.title}
@@ -114,8 +116,11 @@ const SkillsPage = () => {
                       },
                     }}
                   >
-                    <LightingIcon
-                      className={getColorClasses(skill.color).text}
+                    <Zap
+                      className={cn(
+                        "w-4 h-4 text-gray-400",
+                        getColorClasses(skill.color).text
+                      )}
                     />
                     <span className="text-gray-300">{sk}</span>
                   </motion.li>

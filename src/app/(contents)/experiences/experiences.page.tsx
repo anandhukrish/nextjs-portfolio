@@ -4,6 +4,7 @@ import { cn } from "@/lib/utils";
 import React from "react";
 import { motion } from "framer-motion";
 import { experiences } from "@/app/data/constants";
+import { Briefcase, Calendar, ChevronRight } from "lucide-react";
 
 const ExperiencesPage = () => {
   return (
@@ -35,28 +36,8 @@ const ExperiencesPage = () => {
               <div className="flex flex-col md:flex-row md:items-center justify-between mb-6">
                 <div>
                   <div className="flex items-center gap-3 mb-2">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      strokeWidth="2"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      className="lucide lucide-briefcase w-5 h-5 text-blue-400"
-                    >
-                      <rect
-                        width="20"
-                        height="14"
-                        x="2"
-                        y="7"
-                        rx="2"
-                        ry="2"
-                      ></rect>
-                      <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
-                    </svg>
+                    <Briefcase className="w-5 h-5 text-blue-400" />
+
                     <h3 className="text-2xl font-semibold text-white">
                       {exp.role}
                     </h3>
@@ -64,43 +45,14 @@ const ExperiencesPage = () => {
                   <div className="text-lg text-gray-300">{exp.company}</div>
                 </div>
                 <div className="flex items-center gap-2 mt-2 md:mt-0">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    strokeWidth="2"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    className="lucide lucide-calendar w-4 h-4 text-gray-400"
-                  >
-                    <path d="M8 2v4"></path>
-                    <path d="M16 2v4"></path>
-                    <rect width="18" height="18" x="3" y="4" rx="2"></rect>
-                    <path d="M3 10h18"></path>
-                  </svg>
+                  <Calendar className="w-4 h-4 text-gray-400" />
                   <span className="text-gray-400">{exp.duration}</span>
                 </div>
               </div>
               <div className="space-y-3">
                 {exp.responsibilities.map((res) => (
                   <div className="flex items-start gap-2" key={res.slice(0, 5)}>
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      strokeWidth="2"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      className="lucide lucide-chevron-right w-5 h-5 mt-1 text-blue-400 flex-shrink-0"
-                    >
-                      <path d="m9 18 6-6-6-6"></path>
-                    </svg>
+                    <ChevronRight className="w-5 h-5 mt-1 text-blue-400 flex-shrink-0" />
                     <p className="text-gray-300">{res}</p>
                   </div>
                 ))}
