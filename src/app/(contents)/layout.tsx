@@ -12,7 +12,7 @@ const ContentLayout = ({ children }: PropsWithChildren) => {
     <motion.div
       className={cn(
         "min-h-[calc(100vh-4rem)] flex items-center justify-center relative overflow-hidden bg-gradient-to-b from-gray-900 to-gray-800",
-        notHomePage && "py-20"
+        notHomePage && "py-12 lg:py-20"
       )}
       initial={{
         y: "20px",
@@ -32,7 +32,7 @@ const ContentLayout = ({ children }: PropsWithChildren) => {
       ></div>
       <div
         className={cn(
-          "container mx-auto p-6 relative z-10 ",
+          "container mx-auto px-3 lg:px-0 py-6 relative z-10 ",
           !notHomePage && "flex flex-col md:flex-row items-center"
         )}
       >

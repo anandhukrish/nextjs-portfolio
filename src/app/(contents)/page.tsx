@@ -12,6 +12,9 @@ export default function Home() {
           subHeading="Welcome to my portfolio"
           mainHeading="Ananthu Krishnan"
           animateTitle
+          mainClass="text-2xl sm:text-3xl md:text-4xl lg:text-5xl"
+          containerClass="text-center md:text-left"
+          subClass="text-xs"
         />
         <motion.p
           initial={{ y: "-30px", opacity: 0 }}
@@ -23,7 +26,7 @@ export default function Home() {
               duration: 0.4,
             },
           }}
-          className="text-2xl text-gray-300 block mb-8 font-light"
+          className="text-center px-3 sm:px-0 sm:text-left text-lg md:text-lg lg:text-2xl text-gray-300 block mb-6 lg:mb-8 font-light"
         >
           Frontend Developer ( React JS | Vue JS )
         </motion.p>
@@ -47,8 +50,8 @@ export default function Home() {
           <CopyInfo displayText="ananthukrish.k@gmail.com" label="Email" />
         </motion.div>
       </div>
-      <div className="md:w-1/2  flex justify-center mt-12 md:mt-0">
-        <div className="w-[550px] h-[600px]">
+      <div className="w-full sm:w-1/2  flex justify-center sm:justify-end ml-3 md:ml-5 lg:ml-0 my-12 md:my-6">
+        <div className="w-[400px] h-[400px] md:w-[450px] md:h-[450px] lg:w-[500px] lg:h-[550px] xl:w-[550px] xl:h-[600px]">
           <motion.div
             initial={{
               scale: 0.5,
@@ -67,7 +70,7 @@ export default function Home() {
             <Image
               src="/assets/main.png"
               alt="main-image"
-              className="size-full  group-hover:scale-110 transition-transform duration-700"
+              className="size-full  group-hover:scale-110 transition-transform duration-700 object-cover"
               width={150}
               height={150}
             />

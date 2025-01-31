@@ -53,7 +53,9 @@ const SkillsPage = () => {
       <Title
         mainHeading="Technical Skills"
         subHeading="What I Know"
-        containerClass="text-5xl text-center mb-14"
+        containerClass="text-4xl md:text-5xl text-center mb-14"
+        mainClass="text-4xl md:text-5xl"
+        subClass="text-xs"
       />
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-7xl mx-auto">
         {skillsData.map((skill, i) => (

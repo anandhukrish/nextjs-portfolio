@@ -11,7 +11,9 @@ const ResumePage = () => {
       <Title
         mainHeading=" My Professional Journey"
         subHeading="Resume"
-        containerClass="text-5xl text-center mb-14"
+        containerClass="text-4xl md:text-5xl text-center mb-14"
+        mainClass="text-4xl md:text-5xl"
+        subClass="text-xs"
       />
       <div>
         <motion.div

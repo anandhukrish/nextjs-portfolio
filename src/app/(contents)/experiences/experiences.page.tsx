@@ -12,7 +12,9 @@ const ExperiencesPage = () => {
       <Title
         mainHeading="Experience"
         subHeading="Career Journey"
-        containerClass="text-5xl text-center mb-14"
+        containerClass="text-4xl md:text-5xl text-center mb-14"
+        mainClass="text-4xl md:text-5xl"
+        subClass="text-xs"
       />
       <div className="max-w-5xl mx-auto space-y-8">
         {experiences.map((exp, i) => (

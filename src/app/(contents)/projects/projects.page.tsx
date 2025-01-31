@@ -12,7 +12,9 @@ const ProjcetsPage = () => {
       <Title
         mainHeading="Featured Projects"
         subHeading="My Work"
-        containerClass="text-5xl text-center mb-14"
+        containerClass="text-4xl md:text-5xl text-center mb-14"
+        mainClass="text-4xl md:text-5xl"
+        subClass="text-xs"
       />
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto">
         {projects.map((project, i) => (

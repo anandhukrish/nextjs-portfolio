@@ -11,7 +11,8 @@ const ContactPage = () => {
       <Title
         mainHeading="Get in Touch"
         subHeading="Contact"
-        containerClass="text-5xl text-center mb-14"
+        containerClass=" text-center mb-14"
+        subClass="text-xs"
       />
       <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12">
         <motion.div

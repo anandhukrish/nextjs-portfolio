@@ -8,11 +8,13 @@ import { Coffee, Heart } from "lucide-react";
 
 const AboutPage = () => {
   return (
-    <div>
+    <>
       <Title
         mainHeading="About Me"
         subHeading="Get to know me"
-        containerClass="text-5xl text-center mb-14"
+        containerClass="text-4xl md:text-5xl text-center mb-14"
+        mainClass="text-4xl md:text-5xl"
+        subClass="text-xs"
       />
       <motion.div
         initial={{ y: "100px", opacity: 0 }}
@@ -119,7 +121,7 @@ const AboutPage = () => {
           technology.
         </p>
       </motion.div>
-    </div>
+    </>
   );
 };
 
